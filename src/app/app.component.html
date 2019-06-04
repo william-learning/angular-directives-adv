@@ -6,3 +6,14 @@
 <p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">
   Start editing to see some magic happen :)
 </p>
+
+<button class="btn btn-primary" (click)="onToggle()">Toggle</button>
+
+<ul>
+  <div>
+    <li *appUnless="toggle"
+    class="list-group-item">
+      <p>This is false</p>
+    </li>
+  </div>
+</ul>
